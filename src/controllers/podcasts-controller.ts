@@ -1,9 +1,8 @@
 import {IncomingMessage, ServerResponse, STATUS_CODES} from 'http'
 import {serviceListEpisodes} from '../services/list-episodes-service'
 import { serviceFilterEpisodes } from '../services/filter-episodes'
-import { StatusCode } from '../utils/status-code'
 import { ContentType } from '../utils/content-type'
-import { PodcastTransferModel } from '../models/filter-podcast-model'
+import { PodcastTransferModel } from '../models/podcast-transfer-model'
 
 
 export const getListEpisodes = async (req: IncomingMessage, res: ServerResponse) => {
