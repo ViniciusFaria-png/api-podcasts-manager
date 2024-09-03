@@ -75,5 +75,3 @@ A funcionalidade de listar episódios é implementada através de uma API REST q
 Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ---
-
-Este `README` proporciona uma visão clara do que o projeto faz, como funciona, e como outros podem contribuir.
