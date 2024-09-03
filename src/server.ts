@@ -1,5 +1,6 @@
 import * as http from 'http';
 import {getFilterEpisodes, getListEpisodes} from './controllers/podcasts-controller'
+import { Routes } from './routes/routes';
 
 //Implementacao do protocolo http através da criação de um server
 const server = http.createServer(
@@ -9,11 +10,11 @@ const server = http.createServer(
         const [baseUrl, queryString] = req.url?.split("?") ?? ["", ""]
 
 
-        if(req.method === "GET" && baseUrl === "/api/list"){
+        if(req.method === "GET" && baseUrl === Routes.LIST){
             await getListEpisodes(req, res);
         }
 
-        if(req.method === "GET" && baseUrl === "/api/episode"){
+        if(req.method === "GET" && baseUrl === Routes.EPISODE){
             await getFilterEpisodes(req, res);
         }
     }
